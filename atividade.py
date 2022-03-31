@@ -44,8 +44,8 @@ while escolha not in [1, 2, 3]:
 if escolha == 1:
 
     total_dados = conversor_percent_genero(lista_alunos)
-    print(total_dados['percet_homens'])
-    print(total_dados['percet_mulheres'])
+    print(f"Total de Homens {total_dados['percet_homens']}%")
+    print(f"Total de Mulheres {total_dados['percet_mulheres']}%")
 
 elif escolha == 2:
 
@@ -55,8 +55,8 @@ elif escolha == 2:
     print(total_dados['percet_medio'])
 
 elif escolha == 3:
-
-    total_dados = conversor_percent_idade(lista_alunos)
+    print("Função em manutenção! ")
+   """  total_dados = conversor_percent_idade(lista_alunos)
     print(total_dados['menor_vinte'])
     print(total_dados['entre_vinte_trinta'])
-    print(total_dados['maior_trinta'])
+    print(total_dados['maior_trinta']) """

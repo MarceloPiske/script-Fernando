@@ -16,8 +16,8 @@ def conversor_percent_genero(lista_alunos):
         else:
             homens += 1
 
-    total_dados['percet_homens'] = calc_percent(homens)
-    total_dados['percet_mulheres'] = calc_percent(mulheres)
+    total_dados['percet_homens'] = calc_percent(homens, total_alunos)
+    total_dados['percet_mulheres'] = calc_percent(mulheres, total_alunos)
 
     return total_dados
 
@@ -39,9 +39,9 @@ def conversor_percent_ensino(lista_alunos):
         elif aluno.get("escolaridade") == "PS":
             pos_graduacao += 1
 
-    total_dados['percet_pos'] = calc_percent(pos_graduacao)
-    total_dados['percet_superior'] = calc_percent(superior)
-    total_dados['percet_medio'] = calc_percent(medio)
+    total_dados['percet_pos'] = calc_percent(pos_graduacao, total_alunos)
+    total_dados['percet_superior'] = calc_percent(superior, total_alunos)
+    total_dados['percet_medio'] = calc_percent(medio, total_alunos)
 
     return total_dados
 
@@ -61,9 +61,9 @@ def conversor_percent_idade(lista_alunos):
         else:
             maior_trinta += 1
 
-    total_dados['menor_vinte'] = calc_percent(menor_vinte)
-    total_dados['entre_vinte_trinta'] = calc_percent(entre_vinte_trinta)
-    total_dados['maior_trinta'] = calc_percent(maior_trinta)
+    total_dados['menor_vinte'] = calc_percent(menor_vinte, total_alunos)
+    total_dados['entre_vinte_trinta'] = calc_percent(entre_vinte_trinta, total_alunos)
+    total_dados['maior_trinta'] = calc_percent(maior_trinta, total_alunos)
 
     return total_dados
     
